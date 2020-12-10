@@ -6,7 +6,7 @@ module.exports = {
     path: path.resolve(__dirname, "dist"),
     filename: "normalizewheel.js",
     globalObject: "this",
-    library: "getTimeInMillis",
+    library: "normalizeWheel",
     libraryTarget: "umd",
   },
   module: {
