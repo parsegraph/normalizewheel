@@ -1,8 +1,15 @@
 var assert = require("assert");
-import todo from "../dist/normalizewheel";
+import normalizeWheel from "../dist/normalizewheel";
 
-describe("Package", function () {
+describe("normalizeWheel", function () {
   it("works", ()=>{
-    assert.equal(todo(), 42);
+
+    const event = {
+      deltaX: 0,
+      deltaY: 10
+    };
+
+    const normalized = normalizeWheel(event);
+    assert.ok(normalized);
   });
 });

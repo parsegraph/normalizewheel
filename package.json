@@ -1,7 +1,7 @@
 {
   "name": "parsegraph-normalizewheel",
   "version": "1.4.0",
-  "description": "TODO-DESCRIPTION",
+  "description": "A fix found for normalizing wheel input",
   "main": "dist/normalizewheel.js",
   "scripts": {
     "coverage": "nyc npm run test",
