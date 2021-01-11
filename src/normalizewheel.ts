@@ -102,7 +102,7 @@
  * @param {DOMWheelEvent} event the native wheel event to convert
  * @return {object} an object with spinX, spinY, pixelX, and pixelY values normalized from the wheel event
  */
-export default function normalizeWheel(/* object*/ event) {
+export default function normalizeWheel(/* object*/ event:any) {
   /* object*/
   // Reasonable defaults
   const PIXEL_STEP = 10;
@@ -166,4 +166,3 @@ export default function normalizeWheel(/* object*/ event) {
 
   return {spinX: sX, spinY: sY, pixelX: pX, pixelY: pY};
 }
-
