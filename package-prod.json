@@ -1,0 +1,17 @@
+{
+    "name": "parsegraph-normalizewheel",
+    "version": "1.4.3",
+    "description": "normalizewheel",
+    "main": "dist/parsegraph-normalizewheel.js",
+    "types": "dist/parsegraph-normalizewheel.d.ts",
+    "repository": {
+      "type": "git",
+      "url": "git+ssh://git@github.com/parsegraph/normalizewheel.git"
+    },
+    "author": "Rainback, Inc.",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/parsegraph/normalizewheel/issues"
+    },
+    "homepage": "https://github.com/parsegraph/normalizewheel#readme"
+  }
