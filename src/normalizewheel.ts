@@ -102,7 +102,7 @@
  * @param {DOMWheelEvent} event the native wheel event to convert
  * @return {object} an object with spinX, spinY, pixelX, and pixelY values normalized from the wheel event
  */
-export default function normalizeWheel(/* object*/ event:any) {
+export default function normalizeWheel(/* object*/ event: any) {
   /* object*/
   // Reasonable defaults
   const PIXEL_STEP = 10;
@@ -115,21 +115,21 @@ export default function normalizeWheel(/* object*/ event:any) {
   let pY = 0; // pixelX, pixelY
 
   // Legacy
-  if ('detail' in event) {
+  if ("detail" in event) {
     sY = event.detail;
   }
-  if ('wheelDelta' in event) {
+  if ("wheelDelta" in event) {
     sY = -event.wheelDelta / 120;
   }
-  if ('wheelDeltaY' in event) {
+  if ("wheelDeltaY" in event) {
     sY = -event.wheelDeltaY / 120;
   }
-  if ('wheelDeltaX' in event) {
+  if ("wheelDeltaX" in event) {
     sX = -event.wheelDeltaX / 120;
   }
 
   // side scrolling on FF with DOMMouseScroll
-  if ('axis' in event && event.axis === event.HORIZONTAL_AXIS) {
+  if ("axis" in event && event.axis === event.HORIZONTAL_AXIS) {
     sX = sY;
     sY = 0;
   }
@@ -137,10 +137,10 @@ export default function normalizeWheel(/* object*/ event:any) {
   pX = sX * PIXEL_STEP;
   pY = sY * PIXEL_STEP;
 
-  if ('deltaY' in event) {
+  if ("deltaY" in event) {
     pY = event.deltaY;
   }
-  if ('deltaX' in event) {
+  if ("deltaX" in event) {
     pX = event.deltaX;
   }
 
@@ -164,5 +164,5 @@ export default function normalizeWheel(/* object*/ event:any) {
     sY = pY < 1 ? -1 : 1;
   }
 
-  return {spinX: sX, spinY: sY, pixelX: pX, pixelY: pY};
+  return { spinX: sX, spinY: sY, pixelX: pX, pixelY: pY };
 }
