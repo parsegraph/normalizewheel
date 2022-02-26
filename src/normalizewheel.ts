@@ -4,7 +4,7 @@
  * complicated, thus this doc is long and (hopefully) detailed enough to answer
  * your questions.
  *
- * If you need to react to the mouse wheel in a predictable way, this code is
+ * If you need to respond to the mouse wheel in a predictable way, this code is
  * like your bestest friend. * hugs *
  *
  * As of today, there are 4 DOM event types you can listen to:
