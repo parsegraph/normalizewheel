@@ -1,5 +1,5 @@
 const assert = require("assert");
-import normalizeWheel from "../dist/normalizewheel";
+import normalizeWheel from "../src/index";
 
 describe("normalizeWheel", function () {
   it("works", () => {
