@@ -1,6 +1,6 @@
 {
   "name": "parsegraph-normalizewheel",
-  "version": "1.4.8",
+  "version": "1.4.9",
   "description": "A fix found for normalizing wheel input",
   "main": "dist/src/index.js",
   "types": "dist/src/index.d.ts",
